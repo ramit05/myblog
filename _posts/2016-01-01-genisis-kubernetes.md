@@ -176,20 +176,6 @@ For more reference on this topic,my slides can be found at [slideshare][18].
 
 **Hope this helps! Keep forking.**
 
-## The Remote Lab DevOps Offerings:
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/h9h9GNjX5Gncpi" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/bhalothia/the-remote-lab-devops-offerings" title="The Remote Lab DevOps Offerings" target="_blank">The Remote Lab DevOps Offerings</a> </strong> from <strong><a href="//www.slideshare.net/bhalothia" target="_blank">Virendra Bhalothia</a></strong> </div>
-
-Please leave your comments below if you have any doubts or questions.
-
-**Need DevOps help? - Get in touch with** [The Remote Lab][1]
-[LinkedIn][2] [Facebook][3] [Github][4] [Twitter][5]
-
-
-  [1]: http://theremotelab.com
-  [2]: https://www.linkedin.com/company/the-remote-lab
-  [3]: https://www.facebook.com/TheRemoteLab
-  [4]: https://github.com/TheRemoteLab
-  [5]: https://twitter.com/TheRemoteLab
   [6]: https://www.kubernetes.io/
   [7]: https://cloud.githubusercontent.com/assets/8342133/10783468/159283b0-7d7e-11e5-8e90-f9907b423e04.png
   [8]: https://cloud.githubusercontent.com/assets/8342133/10783557/a835bc8c-7d7e-11e5-88d1-4b065e63ca7d.jpg

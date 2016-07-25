@@ -21,11 +21,15 @@ owner:
   email:          ramitsurana@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Awesome Dude, Amazing Life
+
+# Turn on or off the fin animations in the header and footer
+animated_fins:    true
+
   # Social networking links used in footer. Update and remove as you like.
   twitter:        ramitsurana
   facebook:       Ramit_Surana
-  github:         ramitsurana      
-  instagram:      hmfaysal
+  linkedin:       /in/ramitsurana
+  github:         ramitsurana        
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/102602916593522619858
 

@@ -1,5 +1,5 @@
 title:            Ramit Surana
-description:      "Ramit Surana's Blog"
+description:      "Ramit Surana Blog"
 logo:             logo.jpg
 disqus_shortname: ramitsurana
 share:            true
@@ -8,6 +8,11 @@ dropcap:			true
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:        	  /myblog
+
+# Assign a default image for your site's header and footer
+default_bg:       cover.jpeg
+search:           true
+share:            true
 
 # Owner/author information
 owner:
@@ -116,11 +121,7 @@ prose:
             - name: "Personal"
               value: personal
             - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
+              value: engineering            
             - name: "Interesting"
               value: interesting
             - name: "Web-Development"

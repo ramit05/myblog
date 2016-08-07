@@ -1,6 +1,6 @@
 title:            "Ramit Surana"
 description:      "Explore.Dream.Discover"
-logo:             logo.jpg
+# logo:             logo.jpg
 disqus_shortname: ramitsurana
 share:            true
 dropcap:			    true
@@ -25,13 +25,13 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        ramitsurana
   facebook:       ramitsurana
-  linkedin:       /in/ramitsurana
-  github:         ramitsurana        
+  github:         ramitsurana
+  linkedin:       ramitsurana          
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    https://plus.google.com/+RamitSurana96
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:  
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -55,7 +55,7 @@ timezone:    Asia/Kolkata
 future:      true
 highlighter: rouge
 markdown:    kramdown
-paginate:    5
+paginate:    10
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -125,8 +125,8 @@ prose:
               value: engineering            
             - name: "Interesting"
               value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
+            - name: "Life"
+              value: life
           alterable: true
       - name: "tags"
         field:

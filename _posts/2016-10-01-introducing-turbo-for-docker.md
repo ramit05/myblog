@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Introducing Turbo for Docker"
-date: 2016-09-07
+date: 2016-10-01
 author: Ramit Surana
 tags: docker cloud containers
 category: docker containers
-excerpt: "New project's for the new era"
+excerpt: "New project for the new era"
 ---
 
 Minasan, kon'nichiwa (Japense)(In English - Hello Friends). Hope you folks are having an awesome day at work ! For the past sometime I have been learning and exploring golang.It is an awesome language becoming popular like python and java.Following the reason to implement golang in some of my project's.I started to implement golang and try golang in the most efficient manner as possible.This year I decided to start this project following my process of learning.As much like as every developer I Hope you find them useful and worth contributing.
@@ -43,6 +43,36 @@ $ turbo
 If everything is correctly done you should get output something like this:
 
 ````
+Turbo:
+  Simple and Powerfull utility for Docker
+
+Usage:
+  Turbo [command]
+
+Available Commands:
+  backup      backups all your docker stuff
+  clean       Cleans up all your docker images
+  destroy     Erases off all the exited containers
+  harbor      installs and configures vmware harbor
+  kickstart   restarts all your containers quickly
+  kube        Installs and configure minikube for your system
+  ldap        Uses to install and configure Openldap
+  log         Uses logspout to collect your docker logs
+  monitor     To monitor your containers
+  proxy       Installs and configure squid3 proxy for your system
+  refresh     Completely removes and re-installs docker
+  replica     To create Replicas of your containers
+  rkt         Installs and configures rkt
+  search      Search images from multiple registries
+  ship        Transfer your docker images over a remote i.p.
+  version     prints the current version number of turbo
+
+Flags:
+      --config string   config file (default is $HOME/.turbo.yaml)
+  -h, --help            help for Turbo
+  -t, --toggle          Help message for toggle
+
+Use "Turbo [command] --help" for more information about a command.
 
 ````
 For people working on golang,they can start using it via
@@ -75,7 +105,7 @@ Some of the commands used are:
 
 ## Conclusion
 
-For me building this project has been a fun and awesome experience.Obviously like any other project there are more stuff to do,ensure ease of access and more fun features for users.In the end,I hope you enjoyed this post and you give it a shot.Let me know your ideas in the 
+For me building this project has been a fun and awesome experience.Obviously like any other project there are more stuff to do,ensure ease of access and more fun features for users.In the end,I hope you enjoyed this post and you give it a shot.
 
   [1]: http://docker.com
   [2]: http://github.com/ramitsurana/turbo

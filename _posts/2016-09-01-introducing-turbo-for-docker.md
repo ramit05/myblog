@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Turbo for Docker"
-date: 2016-10-01
+date: 2016-09-01
 author: Ramit Surana
 tags: docker cloud containers
 category: docker containers

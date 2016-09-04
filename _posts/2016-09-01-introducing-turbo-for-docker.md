@@ -28,7 +28,7 @@ The real answer to this question is curiosity.I think as a regular docker user m
 
 There are multiple ways to started using Turbo.For the normal users,
 
-Go to [releases]() sections of the turbo's github repo.
+Go to [releases](https://github.com/ramitsurana/turbo/releases) sections of the turbo's github repo.
 Install the tar file.
 Untar it.
 
@@ -91,9 +91,9 @@ Some of the commands used are:
 * [Destroy](#destroy) - Kills all of your exited containers.
 * [Kickstart](#kickstart) - Restarts all your containers
 * [Log](#log) - Installs and configures logspout on your system
-* [Monitor](#monitor)
+* [Monitor](#monitor) - Helps you monitor your docker containers
 * [Refresh](#refresh) - Removes Docker ecosystem and Installs a new one
-* [Replica](#replica)
+* [Replica](#replica) - Creates multiple replicas of your docker container
 * [Rkt](#rkt) - Installs and configures rkt on your system
 * [Search](#search) - Searches Docker registry hub,quay.io for your images
 * [Ship](#ship) -  Ships off all your Docker Stuff to remote <I.P>

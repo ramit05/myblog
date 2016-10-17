@@ -1,6 +1,6 @@
 title:            "Ramit Surana"
-description:      "Explore.Dream.Discover"
-# logo:             logo.jpg
+description:      "Making Things Happen"
+logo:             cover.jpeg
 disqus_shortname: ramitsurana
 share:            true
 dropcap:			    true
@@ -10,7 +10,7 @@ dropcap:			    true
 url:        	  /myblog
 
 # Assign a default image for your site's header and footer
-default_bg:       cover.jpg
+default_bg:       cover.jpeg
 search:           true
 share:            true
 
@@ -20,7 +20,7 @@ owner:
   avatar:         profile.jpg
   email:          ramitsurana@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Amazing Life
+  description:    Looking for new opportunities
 
   # Social networking links used in footer. Update and remove as you like.
   twitter:        ramitsurana

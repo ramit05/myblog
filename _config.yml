@@ -1,6 +1,6 @@
 title:            "Ramit Surana"
 description:      "Making Things Happen"
-logo:             cover.jpeg
+logo:             ramit-logo.png
 disqus_shortname: ramitsurana
 share:            true
 dropcap:			    true
@@ -17,7 +17,7 @@ share:            true
 # Owner/author information
 owner:
   name:           Ramit Surana
-  avatar:         profile.jpg
+  avatar:         profile.jpeg
   email:          ramitsurana@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Looking for new opportunities

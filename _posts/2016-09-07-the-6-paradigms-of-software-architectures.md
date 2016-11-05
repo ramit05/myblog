@@ -6,16 +6,17 @@ author: Ramit Surana
 tags: software architecture serverless microservices
 category: software architectures
 excerpt: "Exploring different types of enterprise class software architectures"
+comments: true
 ---
 
-The software world is revolutionizing like anything.The need of people from delivering solutions have changed.Priorities of software companies have changed.The need of the Hour relies on scalability,resillency and delivery.
+Bonjour les amis (French) (Hello Friends).In this small,introductory and interesting post on software architectures,I am going to explore some very interesting software architectures used by industries.The need of the Hour relies on scalability,resillency and delivery.
 
 ![different-arch](https://cloud.githubusercontent.com/assets/8342133/19617754/61667bb8-9856-11e6-82f0-0d548a452e30.png)
 
 
 ## Java EE Architecture
 
-The beauty of any software architecture is dependent on the ubiquity of the language used for designing architectures.I think that the very first mature step in the direction of building enterprise class architectures was done by [Java](http://java.com).The concept of such type of architectures is 
+The beauty of any software architecture is dependent on the ubiquity of the language used for designing architectures.I think that the very first mature step in the direction of building enterprise class architectures was done by [Java](http://java.com).The concept of such type of architectures is to fully enable use of different components 
 
 A sample figure of Java EE based Architecture using Spring Framework.
 

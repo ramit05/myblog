@@ -25,7 +25,7 @@ Paper as important as the ones used in making the currency for several countries
 
 Here is a diagram depicting what actually happens when anyone transfers or receives a certain amount to/from another bank account
 
-![turbo1](https://cloud.githubusercontent.com/assets/8342133/16713587/95b469bc-46ca-11e6-8fb3-e56c7ce7d19d.png)
+
 
 It is simple as you can see above that a third party is duly innvolved whenever a transaction is happening.This third party can be VISA,Paypal,Rupay etc. The third party acts a intermediary between transactions happening and also helping in making it secure.THe Https certificate is used everywhere and everything is duly encrypted.Also the whole transaction system occours over a different port such as 401.
 
@@ -60,8 +60,6 @@ To tell you the truth all of this stuff is highly financial and as a techie guy 
 
 Download the latest package for your os from [Ethereum Releases](https://github.com/ethereum/mist/releases)
 
-````
-
 ## Building Dapps
 
 Mist browser is the tool of choice to browse and use Ðapps.
@@ -80,16 +78,18 @@ Run the installation script,found in the package.
 
 Initialize the ipfs using:
 
-````
+
 $ ipfs init
-````
+
+
+
 ![ipfs-init](https://cloud.githubusercontent.com/assets/8342133/21089799/0aa57d82-c061-11e6-8e06-23da0c5d1b8c.png)
 
 Note your ipfs hash,and try showing the output using cat:
 
-````
-$
-````
+
+$ ipfs 
+
 
 ![ipfs-cat](https://cloud.githubusercontent.com/assets/8342133/21089935/4159eba0-c062-11e6-9961-f29e04797469.png)
 
@@ -104,10 +104,3 @@ $
 ## Conclusion
 
 Banks are fun.No seriously :).It has been a real fun time for me to explore such unique stuff that has been changing the way we live and how the future ahead might be.The advancements in the payment techniques are awesome and I have high hopes that with time these might get better.Being a techie who got to explore this aspect of the tech has been a amazing experience for me.Hope you guys enjoyed the post and please share your side of the views in the comments too.Have a happy day !
-
-
-  [1]: http://docker.com
-  [2]: http://github.com/ramitsurana/turbo
-  [3]: http://ramitsurana.github.io/turbo
-  [4]: https://cloud.githubusercontent.com/assets/8342133/12071970/ed85ee72-b0ed-11e5-9a99-d4b0d8d8a36a.png  
-  [6]: http://golang.org

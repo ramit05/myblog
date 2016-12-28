@@ -6,6 +6,7 @@ author: Ramit Surana
 tags: kubernetes jenkins docker fabric8 Continous Integration Delivery
 category: containers jenkins docker
 excerpt: "Building CI/CD pipeline with kubernetes"
+comments: true
 ---
 
 Hola amigos !!(*In English - Hello Friends !!*) Hope you are having a jolly good day ! In terms of [Martin Fowler](http://www.martinfowler.com),Continous Integration can be defined as

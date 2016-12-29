@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The 6 paradigms of software architectures"
-date: 2016-29-12
+date: 2016-12-29
 author: Ramit Surana
 tags: software architecture serverless microservices
 category: software architectures

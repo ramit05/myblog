@@ -50,10 +50,10 @@ A sample figure of Microservices Architecture
 This type of architecture has been in the market for very less no. of years.It was first introduced by [Amazon Web Services]
 (https://aws.amazon.com/) in 2014.Currently a lot of the development has been observed in this type of architecture.There has been a lot of different frameworks and organizations being developed in the recent couple of years.One such service is the [Lambda Service](https://aws.amazon.com/lambda/) by AWS.There are different types of services by different types of cloud service providers:
 
-* Lambda Service - AWS(http://aws.amazon.com)*
-* Google Functions - Google Cloud Platforms(https://cloud.google.com/functions/docs/)*
-* Azure Functions - Azure(https://azure.microsoft.com/en-in/services/functions/)*
-* OpenWhisk - IBM Bluemix(https://developer.ibm.com/openwhisk/)*
+* Lambda Service - [AWS](http://aws.amazon.com)
+* [Google Functions](https://cloud.google.com/functions/docs/) - Google Cloud Platform
+* [Azure Functions](https://azure.microsoft.com/en-in/services/functions/) - Azure
+* [OpenWhisk](https://developer.ibm.com/openwhisk/) - IBM Bluemix
 
 The serverless architecture is usually seen as implemented in [nodejs](http://nodejs.org).But there are several different languages such as Python,Go etc which can be implemented by using various different frameworks.Some of these frameworks are 
 

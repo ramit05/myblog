@@ -85,6 +85,6 @@ This awesome [architecture](http://lambda-architecture.net/) has been built by [
 As Marc Chernoff has always said,"In every end, there is also a beginning".
 At the end,I feel that every type of software architecture has its own benefits and losses.There is no stop to evolution when it comes to the software architecture world.The study in the post above innvolves limited study into the evolution of software architecture.I hope that new software architecture continue to evolve & progress. Happy New Year:)
 
-Presentation on monoliths and microservices:
+A Similar Presentation on monoliths and microservices can be found at [Slideshare](http://www.slideshare.net/ramitsurana/building-big-architectures-xp-conference-2016).
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/JqKaeuHRgXqnrS" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ramitsurana/building-big-architectures-xp-conference-2016" title="Building Big Architectures XP Conference 2016" target="_blank">Building Big Architectures XP Conference 2016</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/ramitsurana">Ramit Surana</a></strong> </div>
+Thanks for reading !

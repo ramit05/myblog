@@ -29,7 +29,7 @@ A sample figure of Java EE based Architecture based on [Spring Framework](http:/
 
 ## Monolith Architecture
 
-When we look at startups or newly based enterprises who have started using different languages or API's for there applications.It becomes a routine to build applications based on layer by layer.Each layer consisting of different usage and depends upon the previous one.I think the beauty of monolith applications lie in the fact that one can easily rely on it with ease without much chances of failure.This strategy makes it very wasy to adopt.Such type of applications require very less modification in code.But in monolith it is important to make sure that lots of discussion & changes across variety of different layers of code can be required to modify any changes as if may affect other layers of the application.
+When we look at startups or newly based enterprises who have started using different languages or API's for there applications.It becomes a routine to build applications based on service by service.Each layer consisting of different usage and depends upon the previous one.I think the beauty of monolith applications lie in the fact that one can easily rely on it with ease without much chances of failure for limited amount of users.This strategy makes it very wasy to adopt.Such type of applications require very less modification in code.But in monolith it is important to make sure that lots of discussion is done with other members as changes across variety of different backend services can be required to modify any changes as it may affect the overall application.
 
 A sample figure of Monolith based Architecture
 
@@ -47,7 +47,7 @@ A sample figure of Microservices Architecture
 
 ### Serverless Architecture
 
-This type of architecture has been in the market for very less no. of years.It was first introduced by Amazon Web Services in 2014.The serverless architecture is ideally more suited for startups and medium level enterprises.It helps them to automate the process of scaling and costs by building Functions as a Service.Currently a lot of the development has been observed in this type of architecture.There has been a lot of different frameworks and organizations being developed in the recent couple of years.One such service is the [Lambda Service](https://aws.amazon.com/lambda/) by AWS.There are different types of services by different types of cloud service providers:
+This type of architecture has been in the market for very less no. of years.It was first introduced by Amazon Web Services in 2014.The serverless architecture is ideally more suited for startups and medium level enterprises.It helps them to automate the process of scaling and costs by building Function as a Service.Currently a lot of the development has been observed in this type of architecture.There has been a lot of different frameworks and organizations being developed in the recent couple of years.One such service is the [Lambda Service](https://aws.amazon.com/lambda/) by AWS.There are different types of services by different types of cloud service providers:
 
 * Lambda Service - [AWS](http://aws.amazon.com)
 * [Google Functions](https://cloud.google.com/functions/docs/) - Google Cloud Platform
@@ -84,3 +84,7 @@ This awesome [architecture](http://lambda-architecture.net/) has been built by [
 
 As Marc Chernoff has always said,"In every end, there is also a beginning".
 At the end,I feel that every type of software architecture has its own benefits and losses.There is no stop to evolution when it comes to the software architecture world.The study in the post above innvolves limited study into the evolution of software architecture.I hope that new software architecture continue to evolve & progress. Happy New Year:)
+
+Presentation on monoliths and microservices:
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/JqKaeuHRgXqnrS" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ramitsurana/building-big-architectures-xp-conference-2016" title="Building Big Architectures XP Conference 2016" target="_blank">Building Big Architectures XP Conference 2016</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/ramitsurana">Ramit Surana</a></strong> </div>

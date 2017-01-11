@@ -1,21 +1,15 @@
 ---
 layout: post
-title: "Building New Digital Transaction Systems in the Banking World"
+title: "Using P2P networking for digital banking transactions"
 date: 2016-09-07
 author: Ramit Surana
 tags: P2P Networking BlockChain Bitcoin Dapps OpenBazar
-excerpt: "Using P2P networking for digital banking transactions"
+excerpt: "Building modern day digital transaction systems"
 ---
 
-Today's the internet is almost everything.But making things fast,secure and .For banks the perfect term would be micro-payments.Doing this type of payments requires a completely new transformation for the banks.This gives the open space for a new term called as FinTech or Financial Technology.We will be discussing more and more such terms in the below post.So hope you guys enjoy it !
+Today's the internet is almost everything.But making things fast,secure and for banks, the perfect term would be micro-payments.Doing this type of payments requires a completely new transformation for the banks.This gives the open space for a new term called as FinTech or Financial Technology.We will be discussing more and more such terms in the below post.So hope you guys enjoy it !
 
-**If you are a developer or techie who is only interested in the technology please just scroll throught the starting part and get started with [Using Epheream]().Although I do recommend you to take the time out and read the post from starting till the end.I think you will love it !**
-
-[Bigchaindb]
-[Avaledger]
-[SunExchange]
-
-First things first,I would like to wish all my dear readers a Merry Christmas and Happy New Year 2017.Today everthing is on the internet.We all are going through a completely new era of transformation.With major countries such as India pushing efforts towards a cashless economy,it has become important for the banks to develop new methods and techniques for helping large quantity of customers go cashless easily.
+Today everthing is on the internet.We all are going through a completely new era of transformation.With major countries such as India pushing efforts towards a cashless economy,it has become important for the banks to develop new methods and techniques for helping large quantity of customers go cashless easily.
 
 ## What is Digital Currency ?
 
@@ -25,23 +19,23 @@ Paper as important as the ones used in making the currency for several countries
 
 Here is a diagram depicting what actually happens when anyone transfers or receives a certain amount to/from another bank account
 
-
+![bankops-1](https://cloud.githubusercontent.com/assets/8342133/21854458/d0e20348-d840-11e6-9b9f-0f445a2a9ed1.png)
 
 It is simple as you can see above that a third party is duly innvolved whenever a transaction is happening.This third party can be VISA,Paypal,Rupay etc. The third party acts a intermediary between transactions happening and also helping in making it secure.THe Https certificate is used everywhere and everything is duly encrypted.Also the whole transaction system occours over a different port such as 401.
 
 ## The problem for banks
 
-I think,the real problem that lies for the banks is that with a lot of customers around the globe it is impossible for the banks to just deal with one third party client such as Paypal or Visa in every possible cases.It needs to make sure that wherever the bank provides it services it has a proper third party client for the same.Recently there have been a lot of newcomers in this domain such as Rupay and .The banks pay a huge amount of money for the services that these third party clients provide.
-
-Recently I heard one of the fierce demands by Barclays customers in demand for the Apple Pay system.The customers demanded that they wanted the apple pay system for there accounts.Barclay duly insisted that it has it's own system in place which works just fine.But the customers went over twitter and experessed there anger for the same.Later for the same barclays forcibly made the deal with Apple pay which costed them a huge amount of money.But Happy news for customers !! Hoorah !!
+I think,the real problem that lies for the banks is that with a lot of customers around the globe it is impossible for the banks to just deal with one third party client such as Paypal or Visa in every possible case.It needs to make sure that wherever the bank provides it services it has a proper third party client for the same.Recently there have been a lot of newcomers in this domain such as Rupay and .The banks pay a huge amount of money for the services that these third party clients provide.
 
 ## What is Bitcoin ?
 
-Bitcoin is a small yet powerful concept for the same.It was first introduced by Mashimoto in 2009.(Atleast that's what appears on the research paper that has been published) In reality the founders of Bitcoin are still unknown.There have been several claims ans stuff but it's hard to say anything for sure.It uses the P2P protocol for transferring and receving money.It is highly secure so it's hard enough for people to crack it.One of the main features of the Bitcoin is that there is no reqirement for any third party for transferring the bitcoins from one place to another.This makes it tough for people to maintain a trust over it.In simple words,bitcoin is simple P2P networking with no governments and banks in between.
+Bitcoin is a small yet powerful concept for the same.It was first introduced by Mashimoto in 2009.(Atleast that's what appears on the research paper that has been published) In reality the founders of Bitcoin are still unknown.There have been several claims ans stuff but it's hard to say anything for sure.It uses the P2P protocol for transferring and receving money.It is SHA-256 encrypted so it's hard enough for people to crack it.One of the main features of the Bitcoin is that there is no reqirement for any third party for transferring the bitcoins from one place to another.This makes it tough for people to maintain a trust over it.In simple words,bitcoin is simple P2P networking with no governments and banks in between.
 
 ## How does Bitcoin actually work ?
 
-If you already thrilled by the idea of Bitcoin and are thinking of buying some.Trust me and do not buy it.In the past the usage of bitcoins have been done by terroists for the same and **I personally advise you to not follow that track**.So the big question still remains unanswered,how does it work ? Well for starters it's simple.The image below shares the exact picture of how bitcoin system works:
+If you already thrilled by the idea of Bitcoin and are thinking of buying some.Trust me and do not buy it.In the past the usage of bitcoins have been done by terroists for the same.So the big question still remains unanswered,how does it work ? Well for starters it's simple.The image below shares the exact picture of how bitcoin system works:
+
+![how-bitcoin-works-1](https://cloud.githubusercontent.com/assets/8342133/21854763/028cc63e-d842-11e6-84eb-edf6abc4742f.png)
 
 
 Actually Bitcoin is one of the implementations of Blockchain.It works by adopting the blockchain methodology 
@@ -50,15 +44,44 @@ Actually Bitcoin is one of the implementations of Blockchain.It works by adoptin
 
 Blockchain is a series of networks built using a variety of different computers and packets.The transfer of bitcoins is done through the same.Blockchain depends on a variety of different stuff.It is important for banks to ensure that these stuff can be easily be easily focussed and maintained with time due to legal duties they are bound to:
 
-* [Smart Assessts]
-* [Public Ledgers]
-* [Private Ledgers]
+* Smart Assessts
+* Public Ledgers
+* Private Ledgers
 
-## Using Epheram
+and more....
 
-To tell you the truth all of this stuff is highly financial and as a techie guy myself.It is highly uncommon that I would innvolve myself into something like that.The reason that this has been of huge interest to me is the software/technology part using which it has been built.The Epheream is a cool new open source platform for using blockchain in real time scenarios.It helps us unlock new transactions that can take place using the Bloackchain concept.Its written in [Go](https://golang.org).Awesome ! It is easy to use and various apps could be built for the same on top of it.Below here I am showing you a small example of one of the apps that I have been building on top of it.
+![bitcoin-infographic_5029189c9cbaf](https://cloud.githubusercontent.com/assets/8342133/21854648/88f0435a-d841-11e6-8935-d7d5b67eb0ea.jpg)
+
+
+## Using Epehream
+
+The Epheream is a cool new open source platform for using blockchain in real time scenarios.It helps us unlock new transactions that can take place using the Bloackchain concept.Its written in [Go](https://golang.org).Awesome ! It is easy to use and various apps could be built for the same on top of it.Below here I am showing you a small example of one of the apps that I have been building on top of it.
 
 Download the latest package for your os from [Ethereum Releases](https://github.com/ethereum/mist/releases)
+
+````
+$ sudo apt-get install software-properties-common
+````
+
+````
+$ sudo add-apt-repository -y ethereum/ethereum
+````
+
+````
+$ sudo apt-get update
+````
+
+````
+$ sudo apt-get install etherum
+````
+
+````
+$ sudo geth console
+````
+
+## Using Mist Browser
+
+Download the Debian file of mist browser from Download page.
 
 ## Building Dapps
 
@@ -78,18 +101,16 @@ Run the installation script,found in the package.
 
 Initialize the ipfs using:
 
-
+````
 $ ipfs init
-
-
-
+````
 ![ipfs-init](https://cloud.githubusercontent.com/assets/8342133/21089799/0aa57d82-c061-11e6-8e06-23da0c5d1b8c.png)
 
 Note your ipfs hash,and try showing the output using cat:
 
-
-$ ipfs 
-
+````
+$ ipfs cat ($Hash)
+````
 
 ![ipfs-cat](https://cloud.githubusercontent.com/assets/8342133/21089935/4159eba0-c062-11e6-9961-f29e04797469.png)
 
@@ -103,4 +124,4 @@ $ ipfs
 
 ## Conclusion
 
-Banks are fun.No seriously :).It has been a real fun time for me to explore such unique stuff that has been changing the way we live and how the future ahead might be.The advancements in the payment techniques are awesome and I have high hopes that with time these might get better.Being a techie who got to explore this aspect of the tech has been a amazing experience for me.Hope you guys enjoyed the post and please share your side of the views in the comments too.Have a happy day !
+Banks are fun.No seriously :).It has been a real fun time for me to explore such unique stuff that has been changing the way we live and how the future ahead might be.The advancements in the payment techniques are awesome and I have high hopes that with time these might get better.Hope you guys enjoyed the post and please share your side of the views in the comments too.Have a happy day !

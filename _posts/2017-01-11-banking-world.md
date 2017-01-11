@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "Using P2P networking for digital banking transactions"
-date: 2016-01-11
+date: 2017-01-11
 author: Ramit Surana
 tags: P2P Networking BlockChain Bitcoin Dapps OpenBazar
 excerpt: "Building modern day digital transaction systems"
 ---
 
 Today's the internet is almost everything.But making things fast,secure and for banks, the perfect term would be micro-payments.Doing this type of payments requires a completely new transformation for the banks.This gives the open space for a new term called as FinTech or Financial Technology.We will be discussing more and more such terms in the below post.So hope you guys enjoy it !
+
+## Introduction
 
 Today everthing is on the internet.We all are going through a completely new era of transformation.With major countries such as India pushing efforts towards a cashless economy,it has become important for the banks to develop new methods and techniques for helping large quantity of customers go cashless easily.
 
@@ -72,14 +74,17 @@ $ sudo apt-get update
 $ sudo apt-get install etherum
 ````
 
+For using geth console:
+
 ````
 $ sudo geth console
 ````
 
 ## Using Mist Browser
 
-Download the Debian file of mist browser from Download page.
+Download the Debian file of mist browser from [Download page](https://github.com/ethereum/mist/releases).
 
+![mist](https://cloud.githubusercontent.com/assets/8342133/21855922/1dd62c74-d846-11e6-9dcb-856b1ffd5199.png)
 
 
 ## Building Dapps

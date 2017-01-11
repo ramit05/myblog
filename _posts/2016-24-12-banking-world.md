@@ -83,13 +83,21 @@ $ sudo geth console
 
 Download the Debian file of mist browser from Download page.
 
+
+
 ## Building Dapps
 
-Mist browser is the tool of choice to browse and use Ðapps.
+Mist browser is the tool of choice to browse and use Ðapps.Dapps are the applications built by developers using which you can easily do amazing things.They are easy to build and after some early releases can be deployed over enterprise.
+
+![the-ethereum-experience-42-638](https://cloud.githubusercontent.com/assets/8342133/21855128/4badb3fe-d843-11e6-814c-aac0cc01548e.jpg)
+
 
 ## What is IPFS ?
 
-Do you just trust and heavily rely on Https certificates for your security ? Think again.IPFS is one those disruptive pieces of technology that can make you adopt new approaches to the security lines.For banks 
+Do you just trust and heavily rely on Https certificates for your security ? Think again.IPFS is one those disruptive pieces of technology that can make you adopt new approaches to the security lines.For banks security is one of the prime concerns as black hat hackers are trying to keep on attacking.IPFS is a peer-to-peer hypermedia protocol to make the web faster, safer, and more open.
+
+![1456818734ipfs-logo](https://cloud.githubusercontent.com/assets/8342133/21854895/80d83726-d842-11e6-8906-2174a74a0f32.png)
+
 
 ## Using IPFS
 
@@ -125,3 +133,7 @@ $ ipfs cat ($Hash)
 ## Conclusion
 
 Banks are fun.No seriously :).It has been a real fun time for me to explore such unique stuff that has been changing the way we live and how the future ahead might be.The advancements in the payment techniques are awesome and I have high hopes that with time these might get better.Hope you guys enjoyed the post and please share your side of the views in the comments too.Have a happy day !
+
+Here are the slides:
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/2v9mKJCHXotoj4" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ramitsurana/building-digital-transaction-systems-in-the-new-banking-world" title="Building Digital Transaction Systems in the new Banking World" target="_blank">Building Digital Transaction Systems in the new Banking World</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/ramitsurana">Ramit Surana</a></strong> </div>

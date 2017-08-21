@@ -31,7 +31,9 @@ Many people stumble in life searching for the perfect key to unlock success.I th
 
 3. Art of Persevernece
 
-I remeber Dr. APJ Abdul Kalam saying one day 
+I remeber Dr. APJ Abdul Kalam saying one day,
+" If four things are followed - having a great aim, acquiring knowledge, hard work, and perseverance - then anything can be achieved"
+
 
 4. Being Courageous
 
@@ -47,4 +49,4 @@ For some years during my inital
 
 7. Creating your own definations
 
-I was always fascinated by the way how great entreprenurs and leaders for tommorrow.One things that I can definitely say that was common between all of them is the fact that they all worked on ideas that were never worked on before.Jeff Bezos, a true believer in the power of Internet would not be a billionare today if he had not choosen a path different from others.
+I was always fascinated by the way how great entreprenurs and leaders for tommorrow.One things that I can definitely say that was common between all of them is the fact that they all worked on ideas that were never worked on before.Jeff Bezos, a true believer in the power of Internet amazon would not have existed if he had not choosen a path different from others.

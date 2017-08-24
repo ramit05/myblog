@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Containers in Production"
-date: 2016-01-07
+date: 2017-08-24
 author: Ramit Surana
 tags: containers tips openshift
 category: Introduction

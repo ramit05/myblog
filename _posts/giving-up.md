@@ -19,34 +19,29 @@ One of the most amazing things in life is life itself.While most people like you
 
 <img src="https://user-images.githubusercontent.com/8342133/29498006-04930f60-8611-11e7-892c-1ad2e641e218.jpg" width="700">
 
+As said by Robert F. Kennedy, “Only those who dare to fail greatly can ever achieve greatly.”.This quote truly anticipates the bandwith of how great people have continously failed and still maintain there aspirations.In life we face new challenges everyday. But what is the tradeoff that people who have a legacy and us have in different ? And more importantly Why ?
+
+In this post I am going to share 2 companies who have embraced the philososphy of failing fast and succeding in almost every aspect that history has ever forseen.These companies are Amazon and Apple.
+
+Amazon as we all know populary started as a book selling online business which today owns a market capitalization of over [$430 billion](https://www.cnbc.com/2017/04/05/amazon-worth-twice-wal-mart.html). It all started with Jeff Bezos who went ahead denying traditional retail methods and enriching a concept of Internet over which he believed the future laid ahead.A Wall Street guy who was a Vice President at D.E. Shaw took an unravelling path to determine and test his luck with technology.
+
+Apple a consumer based company which started in Steve Jobs garage in 1976, took a big hit in the consumer markets and went ahead as the planet's most valuable company.Today Apple is worth over [$750 billion](http://money.cnn.com/2017/03/21/investing/apple-stock-all-time-high-three-quarters-trillion/index.html). The company enjoys a history of epic hype, disaster recovery and controversies. 
+
 In this post I am going to share some of the principles and hacks that might bring you success,if not, will surely enchance your life.These principles are:
 
-1. Having Faith
+1. Staying Focussed 
 
-Last week , I was reading some 
-
-2. Revision is the Key
 
 Many people stumble in life searching for the perfect key to unlock success.I think thorough revision with improvements based on your experiences is an important part of life. It helps you master the work that you have been pursuing for a long time.
 
-3. Art of Persevernece
+2. Art of Persevernece & Regular Revisions
 
 I remeber Dr. APJ Abdul Kalam saying one day,
 " If four things are followed - having a great aim, acquiring knowledge, hard work, and perseverance - then anything can be achieved"
 
-
-4. Being Courageous
-
-The curve of life is not always the same.In fact from my experience, you may never know what is coming next.
-
-5. Embracing Change
-
-Life is tough.New things come along your path which forces you to adapt things that are simpler and more efficient.But as the human nature goes not easy to adapt.The quote from above changed my entire view towards life.It kept me motivated to aspire doing something new everyday.I have been on journeys where people don't travel often. I have set myself a goal which most people don't like to pursue.It helps me in certain ways but the truth is it's hard.
-
-6. Learning is the best investment
+3. Embracing Simplicity
 
 For some years during my inital
 
-7. Creating your own definations
+Conclusion:
 
-I was always fascinated by the way how great entreprenurs and leaders for tommorrow.One things that I can definitely say that was common between all of them is the fact that they all worked on ideas that were never worked on before.Jeff Bezos, a true believer in the power of Internet amazon would not have existed if he had not choosen a path different from others.

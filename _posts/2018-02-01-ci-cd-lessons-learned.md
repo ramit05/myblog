@@ -8,19 +8,21 @@ excerpt: "Some immportant lessons learnt in CI/CD Journey"
 ---
 
 Hi Everyone,As Martin Fowler correctly explains :
-*Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
-The primary goal of th process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.*
+
+> Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
+The primary goal of th process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.
+
 So hope you guys enjoy it !
 
 * Using Syntax Checker
 
 One of the most primary starting point in CI/CD is to write a file using which we describe how our jobs are handled in the pipeline. For various tools, there are many syntax validators. I found them really useful. Some of there tools are:
+  
+  - [Jenkins](https://job-dsl.herokuapp.com/)
+  - [Gitlab](https://gitlab.com/ci/lint)
+  - [Travis](https://lint.travis-ci.org/)
 
-* [Jenkins](https://job-dsl.herokuapp.com/)
-* [Gitlab](https://gitlab.com/ci/lint)
-* [Travis](https://lint.travis-ci.org/)
-
-* Use CI Pages for faster output in Web Development Related Projects
+* Use CI Web Pages for better output in Web Development Related Projects
 
 You can use this script in Gitlab (.gitlab-ci.yml) to obtain the output at 
 *http://<-USERNAME-OF-GITLAB->.gitlab.io/<-PROJECT-NAME->/*
@@ -38,6 +40,7 @@ pages:
   only:
   - master
 ````
+
 For GitHub use the below script in (_config.yml) to obtain the output at 
 *http://<-USERNAME-OF-GITHUB->.github.io/<-PROJECT-NAME->/*
 
@@ -74,6 +77,10 @@ Although one might be puzzeled by this tip, since its one own preference to use 
 
 Why ? Because python has simply better libraries than observed in any other language and its dynamic and OOPS feature makes it an incredible tool for parsing and automating stuff. One such common use case is while parsing json using pthon vs bash.
 I find it vary easy to use python libraries for parsiing instead of using bash for any such use cases. Except the jq tool bash simply is unable to parse json.
+
+
+## Rundeck
+
 
 
 ## Conclusion

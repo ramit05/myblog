@@ -18,9 +18,9 @@ So hope you guys enjoy it !
 
 One of the most primary starting point in CI/CD is to write a file using which we describe how our jobs are handled in the pipeline. For various tools, there are many syntax validators. I found them really useful. Some of there tools are:
   
-  - [Jenkins](https://job-dsl.herokuapp.com/)
-  - [Gitlab](https://gitlab.com/ci/lint)
-  - [Travis](https://lint.travis-ci.org/)
+  1. [Jenkins](https://job-dsl.herokuapp.com/)
+  2. [Gitlab](https://gitlab.com/ci/lint)
+  3. [Travis](https://lint.travis-ci.org/)
 
 * Use CI Web Pages for better output in Web Development Related Projects
 
@@ -75,12 +75,10 @@ scm: [
 
 Although one might be puzzeled by this tip, since its one own preference to use any language one might prefer. But after working out for a few common languages such as gradle,bash etc. I feel confident saying that python helps you automate things in a much simpler and faster way than any language possible. 
 
-Why ? Because python has simply better libraries than observed in any other language and its dynamic and OOPS feature makes it an incredible tool for parsing and automating stuff. One such common use case is while parsing json using pthon vs bash.
-I find it vary easy to use python libraries for parsiing instead of using bash for any such use cases. Except the jq tool bash simply is unable to parse json.
+Why ? Because python has simply better libraries than observed in any other language and its dynamic and OOPS feature makes it an incredible tool for parsing and automating stuff. One such common use case example is while parsing json using python vs bash. I find it vary easy to use python libraries for parsing instead of using bash for any such use cases. Except the jq tool bash simply is unable to parse json.
 
-
-## Rundeck
-
+## Windows Powershell
+ 
 
 
 ## Conclusion

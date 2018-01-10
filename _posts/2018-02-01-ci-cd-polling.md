@@ -22,6 +22,51 @@ The term polling can be defined as the method
 
 ## What happens when you do Multiple Checkouts ?
 
+## Chef Automate
+
+Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any oother tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
+
+![download](https://user-images.githubusercontent.com/8342133/34776439-ee4fd3a4-f63c-11e7-96ed-caa29be81d25.png)
+
+Download the package from https://downloads.chef.io/automate .
+
+Try using:
+
+````
+ramit@ramit-Inspiron-3542:~$ automate-ctl
+I don't know that command.
+omnibus-ctl: command (subcommand)
+create-enterprise
+  Create a new enterprise
+create-user
+  Create a new user
+create-users
+  Create new users from a tsv file
+delete-enterprise
+  Deletes an existing enterprise
+delete-project
+  Deletes an existing project
+delete-runner
+.....
+````
+
+Check if everything is good or not:
+````
+ramit@ramit-Inspiron-3542:~$ sudo automate-ctl preflight-check
+[sudo] password for ramit: 
+
+Running Preflight Checks:
+  Checking for required resources...
+    ✔ [passed]  CPU at least 4 cores
+    ✖ [failed]  memory at least 16GB
+  Checking for required directories...
+    ✔ [passed]  /var
+    ✔ [passed]  /var has at least 80GB free
+    ✔ [passed]  /etc
+  Checking for required umask...
+    ✔ [passed]  0022
+....
+````
 ## Habitat
 
 Habitat is yet another amazing tool by Chef. The tool has been introduced recently in 2016. The tool is still in development phase. The project is written in rust and reactive by nature. Now let's do some installation:

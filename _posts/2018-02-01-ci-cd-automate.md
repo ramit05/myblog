@@ -10,7 +10,8 @@ excerpt: "Some important lessons learnt in CI/CD Journey"
 Hi Everyone,As Martin Fowler correctly explains :
 
 > Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
-The primary goal of th process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.
+
+The primary goal of the process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.
 
 So hope you guys enjoy it !
 
@@ -70,9 +71,9 @@ ALIASES:
 
 If you receive the above output, then you have successfully installed habitat.
 
-## Habitat Architecture
+## Docker Vs Habitat
 
-![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
+![docker-vs-habitat](https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png)
 
 ## Habitat Builder
 
@@ -90,6 +91,10 @@ Similar to DockerHub, you can also connect your ECR Registry on your AWS account
 
 ![habitat3](https://user-images.githubusercontent.com/8342133/34907040-5400acba-f89e-11e7-9269-0ad62b71a6b5.png)
 
+You can use some sample files as shown below:
+
+<script src="https://gist.github.com/ramitsurana/96e38aab74ea5529f89d02bbd8822493.js"></script>
+
 After creating a package you can observe the dependencies by scrolling down the page:
 
 ![habitat4](https://user-images.githubusercontent.com/8342133/34907085-34168d74-f89f-11e7-8c75-e5f7e7cc22be.png)
@@ -98,13 +103,14 @@ Here you can observe that it consists of 2 sections, labelled as Transitive depe
 
 On the other hand, Dependencies label is used to signify the extra packages you are using/mentioned in your **plan.sh** file being used by your application.
 
+## Habitat Architecture
+
+![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
+
 ## Habitat Studio
 
 Habitat Studio is a another important feature of Habitat that allows you to test and run you application in simulation to like a real enviornment before you publish it. If you are familiar with python, you can think it as similar as [virtualenv](https://virtualenv.pypa.io/en/stable/). So let's try out hab studio.
 
-## Docker Vs Habitat
-
-![docker-vs-habitat](https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png)
 
 ## Chef Automate
 

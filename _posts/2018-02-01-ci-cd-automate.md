@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Using Polling with CI/CD in Work"
+title: "Automating your CI/CD with Chef"
 date: 2018-02-01
 author: Ramit Surana
-tags: Jenkins Continous Delivery Continous Integration Polling Syntax
+tags: Jenkins Continous Delivery Continous Integration Syntax Checking
 excerpt: "Some important lessons learnt in CI/CD Journey"
 ---
 
@@ -13,14 +13,6 @@ Hi Everyone,As Martin Fowler correctly explains :
 The primary goal of th process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.
 
 So hope you guys enjoy it !
-
-## What is Polling ?
-
-The term polling can be defined as the method 
-
-## Polling with Jenkins
-
-## What happens when you do Multiple Checkouts ?
 
 ## Chef Automate
 
@@ -128,10 +120,38 @@ ALIASES:
 
 If you receive the above output, then you have successfully installed habitat.
 
+## Habitat Hub
+
+The Habitat Hub is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Hub](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
+
+![habitat1](https://user-images.githubusercontent.com/8342133/34906971-4004eb8c-f89d-11e7-8241-4761a59d8563.png)
+
+The term origin here can be defined as a namespace which is created by the user/organization to build one's own packages. It is similar to defining your name in the dockerhub account.
+
+![habitat2](https://user-images.githubusercontent.com/8342133/34907004-c936141c-f89d-11e7-88fe-85277ac813a0.png)
+
+As you can observe from above Habitat asks you to connect your GitHub account and specify the path to which your plan.sh file is placed. It has a by default path under the habitat folder in which it searches your plan.sh file. You can specify your path and use the dockerhub integration if you wish to publish your images to dockerhub.
+
+Similar to DockerHub, you can also connect your ECR Registry on your AWS account by visiting the Integrations section.
+
+![habitat3](https://user-images.githubusercontent.com/8342133/34907040-5400acba-f89e-11e7-9269-0ad62b71a6b5.png)
+
+After creating a package you can observe the dependencies by scrolling down the page:
+
+![habitat4](https://user-images.githubusercontent.com/8342133/34907085-34168d74-f89f-11e7-8c75-e5f7e7cc22be.png)
+
+Here you can observe that it consists of 2 sections, labelled as Transitive dependencies and Dependencies.In simple terms, the transitive dependencies can be labelled as a basic set of packages that are required by every application that you wish to build using docker. These are provisioned and managed by the Habitat Team. You can also treat it similar to the **FROM** Section when writing a Dockerfile. 
+
+On the other hand, Dependencies label is used to signify the extra packages you are using/mentioned in your **plan.sh** file being used by your application.
+
 
 ## Docker Vs Habitat
 
 ![docker-vs-habitat](https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png)
+
+## Conclusion
+
+The Chef Automate appears to do things in a creative and more better way than the regular ways than we usually do. But still it has a long way to go. The Dashboard seems nice and useful, giving you a seamless integration of new technological advancements that old tools used for CI/CD do not provide. For Chef regular enterprise users, this seems like a really good choice but when it comes to other non-chef users, it seems to not offer much out-of-the-box solutions. Hope you like this post, tell me your experiences with chef in the below comments section.
 
 Here are some tips on using CI/CD in a better way:
 
@@ -169,7 +189,7 @@ For GitHub use the below script in (_config.yml) to obtain the output at
 theme: jekyll-theme-cayman
 ````
 
-* Avoid using Polling at all Costs
+* Avoid using Polling
 
 As correctly said by [Koshuke](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/), it is important that we adopt new methods to trigger the pipelines.
 
@@ -194,8 +214,4 @@ scm: [
 
 * Try Using Python for writing automation scripts
 
-Python is a super amazing and fun language to work with. But one of the cool reasons to use it because of the awesome libraries it has support to like dictionary, json, csv etc. 
-
-## Conclusion
-
-Hope you guys enjoyed the post and please share your side of the views in the comments too.Have a happy day !
+Python is a super amazing and fun language to work with. One of the cool reasons why I recommend it is because of the awesome libraries it has support to like dictionary, json, csv etc. 

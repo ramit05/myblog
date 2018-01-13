@@ -14,56 +14,6 @@ The primary goal of th process is to be production ready anytime and anywhere. D
 
 So hope you guys enjoy it !
 
-## Chef Automate
-
-Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
-
-![download](https://user-images.githubusercontent.com/8342133/34776439-ee4fd3a4-f63c-11e7-96ed-caa29be81d25.png)
-
-Download the package from https://downloads.chef.io/automate .
-
-Try using:
-
-````
-ramit@ramit-Inspiron-3542:~$ automate-ctl
-I don't know that command.
-omnibus-ctl: command (subcommand)
-create-enterprise
-  Create a new enterprise
-create-user
-  Create a new user
-create-users
-  Create new users from a tsv file
-delete-enterprise
-  Deletes an existing enterprise
-delete-project
-  Deletes an existing project
-delete-runner
-.....
-````
-
-Check if everything is good or not:
-````
-ramit@ramit-Inspiron-3542:~$ sudo automate-ctl preflight-check
-[sudo] password for ramit: 
-
-Running Preflight Checks:
-  Checking for required resources...
-    ✔ [passed]  CPU at least 4 cores
-    ✖ [failed]  memory at least 16GB
-  Checking for required directories...
-    ✔ [passed]  /var
-    ✔ [passed]  /var has at least 80GB free
-    ✔ [passed]  /etc
-  Checking for required umask...
-    ✔ [passed]  0022
-....
-````
-
-## Chef Automate Architecture
-
-![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
-
 
 ## Habitat
 
@@ -120,9 +70,13 @@ ALIASES:
 
 If you receive the above output, then you have successfully installed habitat.
 
-## Habitat Hub
+## Habitat Architecture
 
-The Habitat Hub is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Hub](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
+![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
+
+## Habitat Builder
+
+The Habitat Builder is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Builder](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
 
 ![habitat1](https://user-images.githubusercontent.com/8342133/34906971-4004eb8c-f89d-11e7-8241-4761a59d8563.png)
 
@@ -144,10 +98,64 @@ Here you can observe that it consists of 2 sections, labelled as Transitive depe
 
 On the other hand, Dependencies label is used to signify the extra packages you are using/mentioned in your **plan.sh** file being used by your application.
 
+## Habitat Studio
+
+Habitat Studio is a another important feature of Habitat that allows you to test and run you application in simulation to like a real enviornment before you publish it. If you are familiar with python, you can think it as similar as [virtualenv](https://virtualenv.pypa.io/en/stable/). So let's try out hab studio.
 
 ## Docker Vs Habitat
 
 ![docker-vs-habitat](https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png)
+
+## Chef Automate
+
+Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
+
+![download](https://user-images.githubusercontent.com/8342133/34776439-ee4fd3a4-f63c-11e7-96ed-caa29be81d25.png)
+
+Download the package from https://downloads.chef.io/automate .
+
+Try using:
+
+````
+ramit@ramit-Inspiron-3542:~$ automate-ctl
+I don't know that command.
+omnibus-ctl: command (subcommand)
+create-enterprise
+  Create a new enterprise
+create-user
+  Create a new user
+create-users
+  Create new users from a tsv file
+delete-enterprise
+  Deletes an existing enterprise
+delete-project
+  Deletes an existing project
+delete-runner
+.....
+````
+
+Check if everything is good or not:
+````
+ramit@ramit-Inspiron-3542:~$ sudo automate-ctl preflight-check
+[sudo] password for ramit: 
+
+Running Preflight Checks:
+  Checking for required resources...
+    ✔ [passed]  CPU at least 4 cores
+    ✖ [failed]  memory at least 16GB
+  Checking for required directories...
+    ✔ [passed]  /var
+    ✔ [passed]  /var has at least 80GB free
+    ✔ [passed]  /etc
+  Checking for required umask...
+    ✔ [passed]  0022
+....
+````
+
+## Chef Automate Architecture
+
+![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
+
 
 ## Conclusion
 

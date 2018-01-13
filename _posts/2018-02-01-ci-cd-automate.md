@@ -193,10 +193,25 @@ $CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
 $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-server.sh
 
 // Run the script to install chef
-$ sudo $HOME/chef-automate-habitat/scripts/install-chef-server.sh $CHEF_AUTOMATE_FQDN
+$ sudo $HOME/chef-automate-habitat/scripts/install-chef-server.sh $CHEF_AUTOMATE_FQDN mike chefautomate
+````
+
+Successfully Copy Files to **Chef Server** from **local machine** using scp:
+
+````
+// License File
+$ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ~/Downloads/automate.license ubuntu@ec2-52-91-162-254.compute-1.amazonaws.com:/tmp
 ````
 
 
+Successfully Copy Files to **Chef Automate** from **Chef Server** using scp:
+````
+//Copy New PEM File
+$ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@ec2-54-82-165-62.compute-1.amazonaws.com:/drop/delivery.pem /tmp
+
+//
+$ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@ec2-52-91-162-254.compute-1.amazonaws.com:/tmp
+````
 
 ## Chef Automate Architecture
 

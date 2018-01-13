@@ -158,6 +158,46 @@ Running Preflight Checks:
 ....
 ````
 
+## Chef Automate Setup on AWS EC2
+
+In order for the Chef Automate Setup to work, we will use a minimal setup in order to proceed. Here are the cconfiguration details:
+
+| Category       | Inbound Security Ports Access         | Operating System & Instance Size                            |
+| ------------- |:--------------------------------------:|:------------------------------------------------|
+| Chef Server | 22 (SSH), 80 (HTTP), 443 (HTTPS), 10000-10003 (push jobs) | Ubuntuv14.04(ami-21766642) & t2.micro  |
+| Chef Automate Server| 22 (SSH), 80 (HTTP), 443 (HTTPS), 8989 (Git)  | Ubuntu 14.04(ami-21766642) & t2.large|
+
+Also, we will be using fully-qualified domain names (FQDNs) as recommended and used by Chef.
+
+Please make sure to **note the FQDN for both your Chef server and Chef Automate server**.
+
+````
+$CHEF_SERVER_FQDN="Public DNS NAME of Chef Server EC2 Instance"
+$CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
+````
+
+Let's get started:
+
+After bringing up the chef-server machine, please log into the machine and use git to clone the following repo:
+
+````
+$ git clone https://github.com/ramitsurana/chef-automate-habitat
+````
+Run scripts/install-chef-server.sh :
+
+````
+// Make sure to set the variable with proper DNS Name
+$CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
+
+// Add permissions to execute
+$ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-server.sh
+
+// Run the script to install chef
+$ sudo $HOME/chef-automate-habitat/scripts/install-chef-server.sh $CHEF_AUTOMATE_FQDN
+````
+
+
+
 ## Chef Automate Architecture
 
 ![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)

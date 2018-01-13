@@ -24,7 +24,7 @@ The term polling can be defined as the method
 
 ## Chef Automate
 
-Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any oother tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
+Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
 
 ![download](https://user-images.githubusercontent.com/8342133/34776439-ee4fd3a4-f63c-11e7-96ed-caa29be81d25.png)
 
@@ -67,6 +67,12 @@ Running Preflight Checks:
     ✔ [passed]  0022
 ....
 ````
+
+## Chef Automate Architecture
+
+![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
+
+
 ## Habitat
 
 Habitat is yet another amazing tool by Chef. The tool has been introduced recently in 2016. The tool is still in development phase. The project is written in rust and reactive by nature. Now let's do some installation:
@@ -123,6 +129,9 @@ ALIASES:
 If you receive the above output, then you have successfully installed habitat.
 
 
+## Docker Vs Habitat
+
+![docker-vs-habitat](https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png)
 
 Here are some tips on using CI/CD in a better way:
 

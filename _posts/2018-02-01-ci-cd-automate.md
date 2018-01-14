@@ -256,6 +256,7 @@ $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-automate.sh
 $ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN mike
 ````
 
+Open your Chef Automate Server using it's dns and enjoy using your new **Chef Automate Dashboard**
 
 ## Chef Automate Architecture
 

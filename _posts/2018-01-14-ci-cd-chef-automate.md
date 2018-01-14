@@ -77,7 +77,7 @@ If you receive the above output, then you have successfully installed habitat.
 
 The Habitat Builder is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Builder](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
 
-![habitat1](https://user-images.githubusercontent.com/8342133/34906971-4004eb8c-f89d-11e7-8241-4761a59d8563.png)
+![habitat1](https://user-images.githubusercontent.com/8342133/34906971-4004eb8c-f89d-11e7-8241-4761a59d8563.png){:class="img-responsive"}
 
 The term origin here can be defined as a namespace which is created by the user/organization to build one's own packages. It is similar to defining your name in the dockerhub account.
 

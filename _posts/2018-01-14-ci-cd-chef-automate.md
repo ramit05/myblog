@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automating your CI/CD with Chef"
-date: 2018-14-01
+date: 2018-01-14
 author: Ramit Surana
 tags: Jenkins Continous Delivery Continous Integration Syntax Checking
 excerpt: "Some important lessons learnt in CI/CD Journey"

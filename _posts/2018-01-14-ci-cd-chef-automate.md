@@ -71,7 +71,7 @@ If you receive the above output, then you have successfully installed habitat.
 
 ## Docker Vs Habitat
 
-<img src="https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png" width="100%" height="100%" />
+<img src="https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png" width="auto" height="auto" />
 
 ## Habitat Builder
 

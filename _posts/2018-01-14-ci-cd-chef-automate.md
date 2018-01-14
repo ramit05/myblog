@@ -260,12 +260,7 @@ $ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER
 
 ![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
 
-
-## Conclusion
-
-The Chef Automate appears to do things in a creative and more better way than the regular ways than we usually do. But still it has a long way to go. The Dashboard seems nice and useful, giving you a seamless integration of new technological advancements that old tools used for CI/CD do not provide. For Chef regular enterprise users, this seems like a really good choice but when it comes to other non-chef users, it seems to not offer much out-of-the-box solutions. Hope you like this post, tell me your experiences with chef in the below comments section.
-
-Here are some tips on using CI/CD in a better way:
+As a bonus, here are some tips on using CI/CD in a better way:
 
  * Using Syntax Checker
 
@@ -327,3 +322,8 @@ scm: [
 * Try Using Python for writing automation scripts
 
 Python is a super amazing and fun language to work with. One of the cool reasons why I recommend it is because of the awesome libraries it has support to like dictionary, json, csv etc. 
+
+
+## Conclusion
+
+The Chef Automate appears to do things in a creative and more better way than the regular ways than we usually do. But still it has a long way to go. The Dashboard seems nice and useful, giving you a seamless integration of new technological advancements that old tools used for CI/CD do not provide. For Chef regular enterprise users, this seems like a really good choice but when it comes to other non-chef users, it seems to not offer much out-of-the-box solutions. Hope you like this post, tell me your experiences with chef in the below comments section.

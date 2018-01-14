@@ -7,11 +7,11 @@ tags: Jenkins Continous Delivery Continous Integration Syntax Chef Habitat Autom
 excerpt: "Using Chef Tools to automate your CI/CD Journey"
 ---
 
-Hi Everyone,As Martin Fowler correctly explains continous delivery:
+Hi Everyone,As [Martin Fowler](http://martinfowler.com) correctly explains continous delivery:
 
 > Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.The primary goal of the process is to be production ready anytime and anywhere.
 
-So hope you guys enjoy it !
+In this simple and amazing piece of article we are going to discuss and explore some new amazing and rather interesting pieces technology.One i.e. Habitat,an Automation tool that Automates your process to build and publish Docker Images and Second i.e. Automate, which is a new chef CI/CD tool with a cool new dashboard & better features.As an added bonus I am  also going to share some nice tips that I use to make my life easier while handling the CI/CD pipelines.So let’s get started,
 
 
 ## Habitat

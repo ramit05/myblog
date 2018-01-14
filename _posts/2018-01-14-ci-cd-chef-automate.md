@@ -3,8 +3,8 @@ layout: post
 title: "Automating your CI/CD with Chef"
 date: 2018-01-14
 author: Ramit Surana
-tags: Jenkins Continous Delivery Continous Integration Syntax Checking
-excerpt: "Some important lessons learnt in CI/CD Journey"
+tags: Jenkins Continous Delivery Continous Integration Syntax Chef Habitat Automate
+excerpt: "Using Chef Tools to automate your CI/CD Journey"
 ---
 
 Hi Everyone,As Martin Fowler correctly explains continous delivery:

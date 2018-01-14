@@ -7,11 +7,10 @@ tags: Jenkins Continous Delivery Continous Integration Syntax Checking
 excerpt: "Some important lessons learnt in CI/CD Journey"
 ---
 
-Hi Everyone,As Martin Fowler correctly explains :
+Hi Everyone,As Martin Fowler correctly explains continous delivery:
 
-> Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
+> Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.The primary goal of the process is to be production ready anytime and anywhere.
 
-The primary goal of the process is to be production ready anytime and anywhere. During this journey, I had some reletive experiences and good practices that I developed. In this post I will be illustrating them in depth from a CI/CD admin perspective.
 
 So hope you guys enjoy it !
 
@@ -238,6 +237,25 @@ $ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/d
 //
 $ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@ec2-52-91-162-254.compute-1.amazonaws.com:/tmp
 ````
+Now your Chef Server is fully up and ready. We now move onto Chef-Automate Sever, after getting into it using ssh. Follow these below steps:
+
+Use git to clone the following repo:
+
+````
+$ git clone https://github.com/ramitsurana/chef-automate-habitat
+````
+
+````
+// Make sure to set the variable with proper DNS Name
+$CHEF_SERVER_FQDN="Public DNS NAME of Chef Server EC2 Instance"
+
+// Add permissions to execute
+$ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-automate.sh
+
+// Run the script to install chef
+$ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN mike
+````
+
 
 ## Chef Automate Architecture
 

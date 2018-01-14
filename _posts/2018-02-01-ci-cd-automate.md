@@ -111,6 +111,26 @@ On the other hand, Dependencies label is used to signify the extra packages you 
 
 Habitat Studio is a another important feature of Habitat that allows you to test and run you application in simulation to like a real enviornment before you publish it. If you are familiar with python, you can think it as similar as [virtualenv](https://virtualenv.pypa.io/en/stable/). So let's try out hab studio.
 
+````
+$ hab studio setup
+````
+
+![habitat5](https://user-images.githubusercontent.com/8342133/34915287-a6e4174a-f949-11e7-8f62-e804f2756859.png)
+
+In the setup default origin, choose your name for origin. In my case I am taking it as **ramitsurana**. 
+
+![habitat6](https://user-images.githubusercontent.com/8342133/34915299-d07925d2-f949-11e7-8ebb-104744fc4795.png)
+
+![habitat7](https://user-images.githubusercontent.com/8342133/34915319-5787f03a-f94a-11e7-955e-bd8050449202.png)
+
+We are going to use the github feature 
+
+![habitat8](https://user-images.githubusercontent.com/8342133/34915325-70bca69a-f94a-11e7-9298-c0dc927471e0.png)
+
+In case you are wondering how to create a new access Github token, please open the following [url](https://github.com/settings/tokens)
+
+![github-access-token](https://user-images.githubusercontent.com/8342133/34915423-6f297f68-f94c-11e7-9bd7-74c6b893bb6c.png)
+
 
 ## Chef Automate
 
@@ -178,7 +198,13 @@ $CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
 
 Let's get started:
 
-After bringing up the chef-server machine, please log into the machine and use git to clone the following repo:
+Using the aws console,we can start 2 EC2 instances with ( t2.large ) instance type. Make sure to configre your security groups like shown below:
+
+![chef-server-rules](https://user-images.githubusercontent.com/8342133/34915271-430eb8f6-f949-11e7-8674-d6bf5323480f.png)
+
+**Make sure to add Port 8989 for Git with Chef-Automate Server.**
+
+After bringing up the **chef-server** machine, please log into the machine and use git to clone the following repo:
 
 ````
 $ git clone https://github.com/ramitsurana/chef-automate-habitat
@@ -258,7 +284,7 @@ For GitHub use the below script in (_config.yml) to obtain the output at
 theme: jekyll-theme-cayman
 ````
 
-* Avoid using Polling
+* Avoid using Polling using GitHub Hooks
 
 As correctly said by [Koshuke](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/), it is important that we adopt new methods to trigger the pipelines.
 

@@ -234,7 +234,10 @@ Successfully Copy Files to **Chef Automate** from **Chef Server** using scp:
 $ scp -i <YOUR-EC2>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@<YOUR-CHEF-SERVER-DNS>:/drop/delivery.pem /tmp
 
 //Upload the delivery.pem file to Chef Automate instance 
-$ scp -i <YOUR-CHEF-AUTOMATE>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@<YOUR-CHEF-AUTOMATE-DNS>:/tmp
+$ scp -i <YOUR-CHEF-AUTOMATE>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@<YOUR-CHEF-AUTOMATE-DNS>:/home/ubuntu
+
+//Upload the your license file to Chef Automate instance 
+$ scp -i <YOUR-CHEF-AUTOMATE>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /<PATH-TO-AUTOMATE-LICENSE>.license ubuntu@<YOUR-CHEF-AUTOMATE-DNS>:/home/ubuntu
 ````
 Now your Chef Server is fully up and ready. We now move onto Chef-Automate Sever, after getting into it using ssh. Follow these below steps:
 
@@ -254,6 +257,24 @@ $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-automate.sh
 // Run the script to install chef
 $ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN mike
 ````
+
+## Chef Automate Internals
+
+Some of the chef automate internals that I observed during this tool exploration are as follows:
+
+* [Elasticsearch](https://www.elastic.co/products/elasticsearch)
+* [Logstash](https://www.elastic.co/products/logstash)
+* [Nginx](https://www.nginx.com/)
+* [Postgresql](https://www.postgresql.org/)
+* [RabbitMq](https://www.rabbitmq.com/)
+
+This can be observed while shutting down chef automate:
+
+````
+$ sudo automate-ctl stop
+````
+
+![chef-automate-internals](https://user-images.githubusercontent.com/8342133/34936511-b2b2e574-fa07-11e7-9497-502e7687af7b.png)
 
 
 ## Chef Automate Architecture

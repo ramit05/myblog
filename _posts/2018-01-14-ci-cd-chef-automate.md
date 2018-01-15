@@ -303,6 +303,9 @@ WIP
 
 WIP
 
+![chef-automate-arch](https://user-images.githubusercontent.com/8342133/34941142-801a87be-fa18-11e7-9bd6-a399548c082c.png)
+
+
 As a bonus, sharing some tips on building & managing CI/CD in a better way:
 
  * Automate Liveness Agent

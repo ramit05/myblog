@@ -230,11 +230,11 @@ $ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/d
 
 Successfully Copy Files to **Chef Automate** from **Chef Server** using scp:
 ````
-//Copy New PEM File
-$ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@ec2-54-82-165-62.compute-1.amazonaws.com:/drop/delivery.pem /tmp
+//Copy New PEM File from Chef Server to your local machine
+$ scp -i <YOUR-EC2>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@<YOUR-CHEF-SERVER-DNS>:/drop/delivery.pem /tmp
 
-//
-$ scp -i ~/.ssh/private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@ec2-52-91-162-254.compute-1.amazonaws.com:/tmp
+//Upload the delivery.pem file to Chef Automate instance 
+$ scp -i <YOUR-CHEF-AUTOMATE>.pem -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/delivery.pem ubuntu@<YOUR-CHEF-AUTOMATE-DNS>:/tmp
 ````
 Now your Chef Server is fully up and ready. We now move onto Chef-Automate Sever, after getting into it using ssh. Follow these below steps:
 

@@ -16,6 +16,8 @@ In this simple and amazing piece of article we are going to discuss and explore 
 
 ## Habitat
 
+### Introduction to Habitat
+
 Habitat is yet another amazing tool by Chef. The tool has been introduced recently in 2016. The tool is still in development phase. The project is written in rust and reactive by nature. Now let's do some installation:
 
 First, visit https://github.com/habitat-sh/habitat#install :
@@ -69,11 +71,11 @@ ALIASES:
 
 If you receive the above output, then you have successfully installed habitat.
 
-## Docker Vs Habitat
+### Docker Vs Habitat
 
 <img src="https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png" width="auto" height="auto" />
 
-## Habitat Builder
+### Habitat Builder
 
 The Habitat Builder is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Builder](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
 
@@ -101,11 +103,11 @@ Here you can observe that it consists of 2 sections, labelled as Transitive depe
 
 On the other hand, Dependencies label is used to signify the extra packages you are using/mentioned in your **plan.sh** file being used by your application.
 
-## Habitat Architecture
+### Habitat Architecture
 
 ![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
 
-## Habitat Studio
+### Habitat Studio
 
 Habitat Studio is a another important feature of Habitat that allows you to test and run you application in simulation to like a real enviornment before you publish it. If you are familiar with python, you can think it as similar as [virtualenv](https://virtualenv.pypa.io/en/stable/). So let's try out hab studio.
 
@@ -131,6 +133,8 @@ In case you are wondering how to create a new access Github token, please open t
 
 
 ## Chef Automate
+
+### Introduction to Chef Automate
 
 Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
 
@@ -176,9 +180,9 @@ Running Preflight Checks:
 ....
 ````
 
-## Chef Automate Setup on AWS EC2
+### Chef Automate Setup on AWS EC2
 
-### Prerequisites:
+#### Prerequisites
 
 In order for the Chef Automate Setup to work, we will use a minimal setup in order to proceed. Here are the configuration details:
 
@@ -197,7 +201,7 @@ Please make sure to **note the FQDN for both your Chef server and Chef Automate 
 $CHEF_SERVER_FQDN="Public DNS NAME of Chef Server EC2 Instance"
 $CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
 ````
-### Setup
+#### Setup
 
 Let's get started:
 
@@ -284,7 +288,7 @@ $ sudo automate-ctl stop
 ![chef-automate-internals](https://user-images.githubusercontent.com/8342133/34936511-b2b2e574-fa07-11e7-9497-502e7687af7b.png)
 
 
-## Chef Automate Internals
+### Chef Automate Internals
 
 Some of the chef automate internals that I observed during this tool exploration are as follows:
 
@@ -294,14 +298,12 @@ Some of the chef automate internals that I observed during this tool exploration
 * [Postgresql](https://www.postgresql.org/)
 * [RabbitMq](https://www.rabbitmq.com/)
 
-## Chef Automate Runners
+### Chef Automate Runners
 
 WIP
 
 
-## Chef Automate Architecture
-
-WIP
+### Chef Automate Architecture
 
 ![chef-automate-arch](https://user-images.githubusercontent.com/8342133/34941142-801a87be-fa18-11e7-9bd6-a399548c082c.png)
 

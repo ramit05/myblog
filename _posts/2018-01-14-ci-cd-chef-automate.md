@@ -134,7 +134,7 @@ In case you are wondering how to create a new access Github token, please open t
 
 Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
 
-![download](https://user-images.githubusercontent.com/8342133/34776439-ee4fd3a4-f63c-11e7-96ed-caa29be81d25.png)
+![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
 
 Download the package from https://downloads.chef.io/automate .
 
@@ -178,14 +178,18 @@ Running Preflight Checks:
 
 ## Chef Automate Setup on AWS EC2
 
-In order for the Chef Automate Setup to work, we will use a minimal setup in order to proceed. Here are the cconfiguration details:
+### Prerequisites:
+
+In order for the Chef Automate Setup to work, we will use a minimal setup in order to proceed. Here are the configuration details:
 
 | Category       | Inbound Security Ports Access         | Operating System & Instance Size                            |
 | ------------- |:--------------------------------------:|:------------------------------------------------|
 | Chef Server | 22 (SSH), 80 (HTTP), 443 (HTTPS), 10000-10003 (push jobs) | Ubuntu 16.04(ami-21766642) & t2.micro  |
 | Chef Automate Server| 22 (SSH), 80 (HTTP), 443 (HTTPS), 8989 (Git)  | Ubuntu 16.04(ami-21766642) & t2.large|
 
-Also, we will be using fully-qualified domain names (FQDNs) as recommended and used by Chef.
+Do make sure to install the **License file** required for running Chef Automate from [here](https://learn.chef.io/modules/try-chef-automate#/).Its a 30 day free trial. As per its [pricing](https://www.chef.io/pricing/) page the fee for Chef Automate is $137 per node.
+
+Also, we will be using fully-qualified domain names (FQDNs) as recommended by Chef.
 
 Please make sure to **note the FQDN for both your Chef server and Chef Automate server**.
 
@@ -193,6 +197,7 @@ Please make sure to **note the FQDN for both your Chef server and Chef Automate 
 $CHEF_SERVER_FQDN="Public DNS NAME of Chef Server EC2 Instance"
 $CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
 ````
+### Setup
 
 Let's get started:
 
@@ -211,13 +216,13 @@ Run scripts/install-chef-server.sh :
 
 ````
 // Make sure to set the variable with proper DNS Name
-$CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
+$ CHEF_AUTOMATE_FQDN="Public DNS NAME of Chef Automate EC2 Instance"
 
 // Add permissions to execute
 $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-server.sh
 
 // Run the script to install chef
-$ sudo $HOME/chef-automate-habitat/scripts/install-chef-server.sh $CHEF_AUTOMATE_FQDN mike chefautomate
+$ sudo $HOME/chef-automate-habitat/scripts/install-chef-server.sh $CHEF_AUTOMATE_FQDN ramit
 ````
 
 Successfully Copy Files to **Chef Server** from **local machine** using scp:
@@ -255,14 +260,29 @@ $CHEF_SERVER_FQDN="Public DNS NAME of Chef Server EC2 Instance"
 $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-automate.sh
 
 // Run the script to install chef
-$ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN mike
+$ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN ramit
 ````
 
 After completing the above steps, you can proceed to open the DNS/IP for Chef Automate Server
 
-![chef-login](https://github.com/ramitsurana/myblog/blob/gh-pages/images/chef-login.png)
+![chef-login](https://user-images.githubusercontent.com/8342133/34936721-7687a976-fa08-11e7-9337-ec84521efdad.png)
 
 Hoorah ! You have successfully configures chef automate and now you are ready to login.
+
+Let's start exploring some new features of the Chef Automate Dashboard:
+
+With your **user name** and password **admin**, try to login. You will observe the following screen:
+
+![chef-login1](https://user-images.githubusercontent.com/8342133/34937222-1341306a-fa0a-11e7-9801-3c2cf4206785.png)
+
+For shutting down chef automate:
+
+````
+$ sudo automate-ctl stop
+````
+
+![chef-automate-internals](https://user-images.githubusercontent.com/8342133/34936511-b2b2e574-fa07-11e7-9497-502e7687af7b.png)
+
 
 ## Chef Automate Internals
 
@@ -274,20 +294,20 @@ Some of the chef automate internals that I observed during this tool exploration
 * [Postgresql](https://www.postgresql.org/)
 * [RabbitMq](https://www.rabbitmq.com/)
 
-This can be observed while shutting down chef automate:
+## Chef Automate Runners
 
-````
-$ sudo automate-ctl stop
-````
-
-![chef-automate-internals](https://user-images.githubusercontent.com/8342133/34936511-b2b2e574-fa07-11e7-9497-502e7687af7b.png)
+WIP
 
 
 ## Chef Automate Architecture
 
-![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
+WIP
 
-As a bonus, here are some tips on using CI/CD in a better way:
+As a bonus, sharing some tips on building & managing CI/CD in a better way:
+
+ * Automate Liveness Agent
+ 
+ You can also use chef automate [liveness agent](https://github.com/chef/automate-liveness-agent) for sending keepalive messages to Chef Automate, which prevents nodes that are up but not frequently running Chef Client from appearing as "missing" in the Automate UI. At the time of writing, it is in development.
 
  * Using Syntax Checker
 

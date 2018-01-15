@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automating your CI/CD with Chef"
+title: "Automating your CI/CD with Chef Automate & Habitat"
 date: 2018-01-14
 author: Ramit Surana
 tags: Jenkins Continous Delivery Continous Integration Syntax Chef Habitat Automate
@@ -182,8 +182,8 @@ In order for the Chef Automate Setup to work, we will use a minimal setup in ord
 
 | Category       | Inbound Security Ports Access         | Operating System & Instance Size                            |
 | ------------- |:--------------------------------------:|:------------------------------------------------|
-| Chef Server | 22 (SSH), 80 (HTTP), 443 (HTTPS), 10000-10003 (push jobs) | Ubuntuv14.04(ami-21766642) & t2.micro  |
-| Chef Automate Server| 22 (SSH), 80 (HTTP), 443 (HTTPS), 8989 (Git)  | Ubuntu 14.04(ami-21766642) & t2.large|
+| Chef Server | 22 (SSH), 80 (HTTP), 443 (HTTPS), 10000-10003 (push jobs) | Ubuntu 16.04(ami-21766642) & t2.micro  |
+| Chef Automate Server| 22 (SSH), 80 (HTTP), 443 (HTTPS), 8989 (Git)  | Ubuntu 16.04(ami-21766642) & t2.large|
 
 Also, we will be using fully-qualified domain names (FQDNs) as recommended and used by Chef.
 
@@ -321,7 +321,7 @@ scm: [
 
 * Try Using Python for writing automation scripts
 
-Python is a super amazing and fun language to work with. One of the cool reasons why I recommend it is because of the awesome libraries it has support to like dictionary, json, csv etc. 
+Python is a super amazing and fun language to work with. One of the cool reasons why I recommend it is because of the awesome libraries it has support to like [dictionary](https://pypi.python.org/pypi/PyDictionary/1.3.4), [json](https://docs.python.org/2/library/json.html), [csv](https://docs.python.org/2/library/csv.html) etc. 
 
 
 ## Conclusion

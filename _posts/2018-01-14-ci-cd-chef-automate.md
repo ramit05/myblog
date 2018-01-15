@@ -258,6 +258,12 @@ $ chmod +x $HOME/chef-automate-habitat/scripts/install-chef-automate.sh
 $ sudo $HOME/chef-automate-habitat/scripts/install-chef-automate.sh $CHEF_SERVER_FQDN mike
 ````
 
+After completing the above steps, you can proceed to open the DNS/IP for Chef Automate Server
+
+![chef-login](https://github.com/ramitsurana/myblog/blob/gh-pages/images/chef-login.png)
+
+Hoorah ! You have successfully configures chef automate and now you are ready to login.
+
 ## Chef Automate Internals
 
 Some of the chef automate internals that I observed during this tool exploration are as follows:

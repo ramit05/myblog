@@ -7,7 +7,7 @@ tags: Jenkins Continous Delivery Continous Integration Syntax Chef Habitat Autom
 excerpt: "Using Chef Tools to automate your CI/CD Journey"
 ---
 
-Hi Everyone,As [Martin Fowler](http://martinfowler.com) correctly explains continous delivery:
+Hallo Freunde (German)(Hello Friends),As [Martin Fowler](http://martinfowler.com) correctly explains continous delivery:
 
 > Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.The primary goal of the process is to be production ready anytime and anywhere.
 
@@ -18,7 +18,7 @@ In this simple and amazing piece of article we are going to discuss and explore 
 
 ### Introduction to Habitat
 
-Habitat is yet another amazing tool by Chef. The tool has been introduced recently in 2016. The tool is still in development phase. The project is written in rust and reactive by nature. Now let's do some installation:
+Habitat is a new amazing tool introduced by Chef.It basically tries to serve one motive i.e. to automate the process of making a container image as easily as possible.You can think of it as **Dockerfile** for the docker except that it has some new features for building images and process to publish it in CI/CD perspecttive. The tool has been introduced in 2016 & is still into development phase. It is written in rust and reactive by nature. Now let's do some installation:
 
 First, visit https://github.com/habitat-sh/habitat#install :
 
@@ -71,13 +71,25 @@ ALIASES:
 
 If you receive the above output, then you have successfully installed habitat.
 
-### Docker Vs Habitat
 
-<img src="https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png" width="auto" height="auto" />
+### Habitat Architecture
+
+![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
+
+Now upon closely looking at its architecture and how to write it. You can clearly observe the various files one has to write in order to bring up the container/image. The main file in this section is the **plan.sh** file which is responsible for the deployment strategy/dependencies/package name of the habitat image. It is mandatory to make this file and configure it properly in order to achieve the best results.
+
+Next, is the **default.toml** file. This file contains the information about the ports and external configurations of your application that you have. It is similar to having **nginx.conf** for **nginx** or **apache2conf** for **apache**, which I believe is an interesting and good idea. 
+
+For the hooks part, I observed its usage while explorring some of the samples provided by habitat team in there docs.In simple terms, it is basically breaking down your requirements as per your application into multiple stages each having its priority in different order while running your application. Like we have **Entrypoint** in **Dockerfile**. For example, Here the file **Init** in scripts contains your initialization commands.
+
+Some sample examples:
+
+<script src="https://gist.github.com/ramitsurana/96e38aab74ea5529f89d02bbd8822493.js"></script>
+
 
 ### Habitat Builder
 
-The Habitat Builder is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different docker images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Builder](https://bldr.habitat.sh). As one can observe, the UI seems pretty slick, so kudos to Habitat Team :)
+The Habitat Builder is a place similar to Docker Hub/Quay.io. It is a place where you can automatically check in you code with habitat and build a variety of different container images. It also enables you to publish your docker images on docker hub by connecting your docker hub account.To get started sign up at [Habitat Builder](https://bldr.habitat.sh).
 
 ![habitat1](https://user-images.githubusercontent.com/8342133/34906971-4004eb8c-f89d-11e7-8241-4761a59d8563.png)
 
@@ -91,21 +103,13 @@ Similar to DockerHub, you can also connect your ECR Registry on your AWS account
 
 ![habitat3](https://user-images.githubusercontent.com/8342133/34907040-5400acba-f89e-11e7-9269-0ad62b71a6b5.png)
 
-You can use some sample files as shown below:
-
-<script src="https://gist.github.com/ramitsurana/96e38aab74ea5529f89d02bbd8822493.js"></script>
-
-After creating a package you can observe the dependencies by scrolling down the page:
+After creating a package/build you can observe the dependencies by scrolling down the page:
 
 ![habitat4](https://user-images.githubusercontent.com/8342133/34907085-34168d74-f89f-11e7-8c75-e5f7e7cc22be.png)
 
 Here you can observe that it consists of 2 sections, labelled as Transitive dependencies and Dependencies.In simple terms, the transitive dependencies can be labelled as a basic set of packages that are required by every application that you wish to build using docker. These are provisioned and managed by the Habitat Team. You can also treat it similar to the **FROM** Section when writing a Dockerfile. 
 
 On the other hand, Dependencies label is used to signify the extra packages you are using/mentioned in your **plan.sh** file being used by your application.
-
-### Habitat Architecture
-
-![chef-habitat](https://user-images.githubusercontent.com/8342133/34907583-145ce07a-f8a7-11e7-9c73-8f020a1cb739.png)
 
 ### Habitat Studio
 
@@ -123,7 +127,7 @@ In the setup default origin, choose your name for origin. In my case I am taking
 
 ![habitat7](https://user-images.githubusercontent.com/8342133/34915319-5787f03a-f94a-11e7-955e-bd8050449202.png)
 
-We are going to use the github feature 
+In order to achieve our objective we are going to use this github feature 
 
 ![habitat8](https://user-images.githubusercontent.com/8342133/34915325-70bca69a-f94a-11e7-9298-c0dc927471e0.png)
 
@@ -131,18 +135,29 @@ In case you are wondering how to create a new access Github token, please open t
 
 ![github-access-token](https://user-images.githubusercontent.com/8342133/34915423-6f297f68-f94c-11e7-9bd7-74c6b893bb6c.png)
 
+Copy the generated token in the cli tool for hab & you are good to go. 
+
+**Do make sure to save this token. We will use it in the next part of the article.**
+
+### Docker Vs Habitat
+
+<img src="https://user-images.githubusercontent.com/8342133/34904574-7af45216-f86e-11e7-87a0-1f2abf6aea3b.png" width="auto" height="auto" />
 
 ## Chef Automate
 
 ### Introduction to Chef Automate
 
-Chef automate is a CI/CD Based solution provided by Chef to complete your end to end delivery. Instead of using Jenkins or any other tool for delivery pipelines, it seems to be a perfect solution for organizations using Chef.
+Chef automate is a CI/CD Based solution provided by [Chef](http://chef.io) to complete your end to end delivery requirements. It provides you with necessary tools to make your life easier and simple. It has by default integration for features & tools like [Inspec](https://www.inspec.io/) for Compliance, LDAP/SAML Support, [Slack](http://www.slack.com) Integration for Notifications etc. 
 
 ![chef-automate-habitat](https://user-images.githubusercontent.com/8342133/34904580-9db6c5ae-f86e-11e7-974e-87ead19b8dac.png)
 
-Download the package from https://downloads.chef.io/automate .
+## Trying Out on Local System:
 
-Try using:
+Chef Automate can be easily tried on your local system by downloading Chef Automate from [here](https://downloads.chef.io/automate)
+
+For the cli, Download the package from [here](https://downloads.chef.io/automate) .
+
+In order to check, try running:
 
 ````
 ramit@ramit-Inspiron-3542:~$ automate-ctl
@@ -180,18 +195,32 @@ Running Preflight Checks:
 ....
 ````
 
+For Authenticating License:
+
+(Grab your free License from [here](https://learn.chef.io/modules/try-chef-automate#/))
+````
+// Setup License & organization
+$ automate-ctl setup --license /$PATH/automate.license --server-url https://localhost/organizations/$org_name --enterprise default --configure --no-build-node
+
+$ automate-ctl reconfigure
+
+//Create a default user and password
+$ automate-ctl create-user default $user --password admin --roles "admin"
+````
+Try opening **http://127.0.0.1:80** to interact with the Web UI.
+
 ### Chef Automate Setup on AWS EC2
 
 #### Prerequisites
 
 In order for the Chef Automate Setup to work, we will use a minimal setup in order to proceed. Here are the configuration details:
 
-| Category       | Inbound Security Ports Access         | Operating System & Instance Size                            |
-| ------------- |:--------------------------------------:|:------------------------------------------------|
+| Category      | Inbound Security Ports Access         | Operating System & Instance Size                |
+| ------------- |:-------------------------------------:|:------------------------------------------------|
 | Chef Server | 22 (SSH), 80 (HTTP), 443 (HTTPS), 10000-10003 (push jobs) | Ubuntu 16.04(ami-21766642) & t2.micro  |
 | Chef Automate Server| 22 (SSH), 80 (HTTP), 443 (HTTPS), 8989 (Git)  | Ubuntu 16.04(ami-21766642) & t2.large|
 
-Do make sure to install the **License file** required for running Chef Automate from [here](https://learn.chef.io/modules/try-chef-automate#/).Its a 30 day free trial. As per its [pricing](https://www.chef.io/pricing/) page the fee for Chef Automate is $137 per node.
+Do make sure to install the **License file** required for running Chef Automate from [here](https://learn.chef.io/modules/try-chef-automate#/).Its a 30 day free trial. As per its current [pricing](https://www.chef.io/pricing/) page the fee for Chef Automate on AWS is $0.0155 node/hour.
 
 Also, we will be using fully-qualified domain names (FQDNs) as recommended by Chef.
 
@@ -290,7 +319,9 @@ $ sudo automate-ctl stop
 
 ### Chef Automate Internals
 
-Some of the chef automate internals that I observed during this tool exploration are as follows:
+Some of the chef automate internals that I observed while exploring this tool are as follows:
+
+![chef-automate-arch](https://user-images.githubusercontent.com/8342133/34941142-801a87be-fa18-11e7-9bd6-a399548c082c.png)
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 * [Logstash](https://www.elastic.co/products/logstash)
@@ -298,21 +329,15 @@ Some of the chef automate internals that I observed during this tool exploration
 * [Postgresql](https://www.postgresql.org/)
 * [RabbitMq](https://www.rabbitmq.com/)
 
-### Chef Automate Runners
+We will be discussing more on this in the next article :)
 
-WIP
-
-
-### Chef Automate Architecture
-
-![chef-automate-arch](https://user-images.githubusercontent.com/8342133/34941142-801a87be-fa18-11e7-9bd6-a399548c082c.png)
-
+## Tips & Tricks on CI/CD
 
 As a bonus, sharing some tips on building & managing CI/CD in a better way:
 
  * Automate Liveness Agent
  
- You can also use chef automate [liveness agent](https://github.com/chef/automate-liveness-agent) for sending keepalive messages to Chef Automate, which prevents nodes that are up but not frequently running Chef Client from appearing as "missing" in the Automate UI. At the time of writing, it is in development.
+ You can also use chef automate [liveness agent](https://github.com/chef/automate-liveness-agent) for sending keepalive messages to Chef Automate, which prevents nodes that are up but not frequently running Chef Client from appearing as "missing" in the Automate UI. At the time of writing, it is currently in development.
 
  * Using Syntax Checker
 
@@ -378,4 +403,4 @@ Python is a super amazing and fun language to work with. One of the cool reasons
 
 ## Conclusion
 
-The Chef Automate appears to do things in a creative and more better way than the regular ways than we usually do. But still it has a long way to go. The Dashboard seems nice and useful, giving you a seamless integration of new technological advancements that old tools used for CI/CD do not provide. For Chef regular enterprise users, this seems like a really good choice but when it comes to other non-chef users, it seems to not offer much out-of-the-box solutions. Hope you like this post, tell me your experiences with chef in the below comments section.
+Exploring Chef Automate & Habitat has been a heck of a fun task for me. It enabled me to learn more about the upcoming new technologies and its usage in the DevOps world. In the end, I Hope you enjoyed this post,do share this post & tell me your fun experiences with chef in the below comments section.

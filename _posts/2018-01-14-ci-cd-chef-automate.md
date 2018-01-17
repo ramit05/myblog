@@ -3,6 +3,7 @@ layout: post
 title: "Automating your CI/CD with Chef Automate & Habitat - Part 1"
 date: 2018-01-14
 author: Ramit Surana
+category: Chef CI/CD Jenkins Habitat Automate
 tags: Jenkins Continous Delivery Continous Integration Syntax Chef Habitat Automate
 excerpt: "Using Chef Tools to automate your CI/CD Journey"
 ---
@@ -18,7 +19,7 @@ In this simple and amazing piece of article we are going to discuss and explore 
 
 ### Introduction to Habitat
 
-Habitat is a new amazing tool introduced by Chef.It basically tries to serve one motive i.e. to automate the process of making a container image as easily as possible.You can think of it as **Dockerfile** for the docker except that it has some new features for building images and process to publish it in CI/CD perspecttive. The tool has been introduced in 2016 & is still into development phase. It is written in rust and reactive by nature. Now let's do some installation:
+Habitat is a new amazing tool introduced by Chef.It basically tries to serve one motive i.e. to automate the process of making a container image as easily as possible.You can think of it as **Dockerfile** for the docker except that it has some new features for building images and process to publish it in CI/CD perspective. The tool has been introduced in 2016 & is still into development phase. It is written in rust and reactive by nature. Now let's do some installation:
 
 First, visit https://github.com/habitat-sh/habitat#install :
 
@@ -80,7 +81,7 @@ Now upon closely looking at its architecture and how to write it. You can clearl
 
 Next, is the **default.toml** file. This file contains the information about the ports and external configurations of your application that you have. It is similar to having **nginx.conf** for **nginx** or **apache2conf** for **apache**, which I believe is an interesting and good idea. 
 
-For the hooks part, I observed its usage while explorring some of the samples provided by habitat team in there docs.In simple terms, it is basically breaking down your requirements as per your application into multiple stages each having its priority in different order while running your application. Like we have **Entrypoint** in **Dockerfile**. For example, Here the file **Init** in scripts contains your initialization commands.
+For the hooks part, I observed its usage while exploring some of the samples provided by habitat team in there docs.In simple terms, it is basically breaking down your requirements as per your application into multiple stages each having its priority in different order while running your application. Like we have **Entrypoint** in **Dockerfile**. For example, Here the file **Init** in scripts contains your initialization commands.
 
 Some sample examples:
 
